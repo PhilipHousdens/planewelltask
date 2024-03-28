@@ -12,7 +12,7 @@ app.use(bodyParser.urlencoded({extended: true}));
 // Use compression middleware
 app.use(compression());
 
-app.use(express.static(path.join(__dirname, './public/CSS'), {maxAge: 31536000 }));
+app.use('/public/CSS', express.static(path.join(__dirname, '/public/CSS')));
 
 // set the view engine to ejs
 app.set('views', path.join(__dirname, 'views'));
