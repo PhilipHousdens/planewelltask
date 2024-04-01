@@ -15,7 +15,8 @@ module.exports = {
       black: colors.black,
     },
     fontFamily: {
-      'mono': ["Montserrat Alternates", "sans-serif"]
+      'mono': ["Montserrat Alternates", "sans-serif"],
+      'mon': ["Montserrat", "sans-serif"]
     }
   },
   plugins: [
