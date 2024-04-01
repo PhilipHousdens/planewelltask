@@ -13,6 +13,7 @@ app.use(bodyParser.urlencoded({extended: true}));
 app.use(compression());
 
 app.use('/public/CSS', express.static(path.join(__dirname, '/public/CSS')));
+app.use('/public/asset/image', express.static(path.join(__dirname, '/public/asset/image')));
 
 // set the view engine to ejs
 app.set('views', path.join(__dirname, 'views'));
