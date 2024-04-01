@@ -1,3 +1,4 @@
+/**@type {import('tailwindcss').Config} */
 module.exports = {
   content: ["./views/**/*.ejs", "/server.js"],
   theme: {
@@ -12,5 +13,5 @@ module.exports = {
       'mono': ["Montserrat Alternates", "sans-serif"]
     }
   },
-  plugins: [],
+  plugins: [require('@tailwindcss/container-queries')],
 }

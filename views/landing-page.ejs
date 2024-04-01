@@ -19,12 +19,16 @@
             <p class="text-white text-5xl w-4/5 mt-20">
                 Your Personal Task Management Solution
             </p>
-            <div class="flex items-center justify-center flex-grow mt-[20rem]">
-                <a href="#">
-                    <button class="bg-btnGreen py-3 px-6 rounded-md text-white">
-                        Get Started
-                    </button>
-                </a>
+            <div class="flex items-center justify-center flex-grow mt-[20rem]"> 
+                <div class="relative group">
+                    <div class="absolute inset-0 animate-pulse bg-btnGreen rounded-md blur opacity-70 group-hover:opacity-100 transition duration-1000">
+                    </div>
+                    <a href="#">
+                        <button class="relative bg-background py-3 px-6 rounded-md text-white group-hover:text-btnGreen transition duration-1000">
+                            Get Started &rarr;
+                        </button>
+                    </a>
+                </div>
             </div>
         </div>
     </main>       
